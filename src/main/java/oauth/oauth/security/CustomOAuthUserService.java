@@ -33,8 +33,8 @@ public class CustomOAuthUserService implements OAuth2UserService<OAuth2UserReque
         System.out.println("4. 유저 생성");
         userCreate(userRequest, oAuth2User);
 
-        throw new OAuth2AuthenticationException("의도적인 실패 exception.");
-//        return oAuth2User;
+//        throw new OAuth2AuthenticationException("의도적인 실패 exception.");
+        return oAuth2User;
     }
 
     private OAuth2User getOAuth2User(OAuth2UserRequest userRequest) {
